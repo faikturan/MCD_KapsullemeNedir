@@ -29,6 +29,19 @@ namespace MCD_KapsullemeNedir
             Console.WriteLine("Müşteri Id Değeri: " +M1.ID.ToString());
             //M1.ID = 10;
 
+            M1.TCKimlikNumarasi = "1a254402599";
+            string TC = M1.TCKimlikNumarasi;
+
+            Console.WriteLine(TC);
+
+            //isim ve soyisim
+            //isim ve soyisim [soyisim] = set
+            //email adresi ....
+            //email get faik.turan@hotmail.com
+            //set: private
+            M1.isim = "faik";
+            M1.Soyisim = "turan";
+            Console.WriteLine(M1.EmailAdres);
 
 
             Console.ReadKey();
