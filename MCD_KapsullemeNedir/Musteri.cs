@@ -6,10 +6,30 @@ using System.Threading.Tasks;
 
 namespace MCD_KapsullemeNedir
 {
-    class Musteri
+    internal class Musteri
     {
         //Class => Field
         int id;
+
+        public Musteri()
+        {
+            this.id = IDuret();
+        }
+
+
+        public int ID
+        {
+            get
+            {
+                return this.id;
+            }
+            private set
+            {
+                this.id = value;
+            }
+        }
+
+
         public string isim;
         public string soyisim;
 
@@ -31,6 +51,13 @@ namespace MCD_KapsullemeNedir
                 return this.emailAdres;
             }
 
+        }
+
+
+        private int IDuret()
+        {
+            Random rnd = new Random();
+            return rnd.Next(10000, 90000);
         }
     }
 }
